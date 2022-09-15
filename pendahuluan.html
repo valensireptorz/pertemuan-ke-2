@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Navbar</title>
+    <style>
+    * {margin:0; padding:0;}
+     
+    body {
+     background-color:#fff;
+     font-family:Arial, Helvetica, sans-serif;
+     color:#000;
+    }
+
+    nav {
+     margin:auto;
+     text-align: center;
+     width: 100%;
+    } 
+
+    nav ul ul {
+     display: none;
+    }
+
+    nav ul li:hover > ul{
+    display: block;
+    width: 150px;
+    }
+
+    nav ul {
+     background: white;
+     padding: 0 20px;
+     list-style: none;
+     position: relative;
+     display: inline-table;
+     width: 100%;
+    }
+
+    nav ul:after {
+     content: ""; 
+     clear:both; 
+     display: block;
+    }
+
+    nav ul li{
+     float:left;
+    }
+
+    nav ul li img{
+        margin-right: 300px;
+    }
+
+    nav ul li:hover{
+     background: white;
+    }
+
+    
+
+    nav ul li a{
+     display: block;
+     padding: 25px;
+     color: black;
+     text-decoration: none;
+    }
+
+    nav ul ul{
+     background: orange;
+     border-radius: 0px;
+     padding: 0;
+     position: absolute;
+     top:100%;
+    }
+
+    nav ul ul li{
+     float:none;
+     border-top: 1px soild orange;
+     border-bottom: 1px solid orange;
+     position: relative;
+    }
+
+    nav ul ul li a{
+     padding: 15px 40px;
+     color: black;
+    }
+
+    nav ul ul li a:hover{
+     background-color: red;
+    }
+
+    nav ul ul ul{
+     position: absolute;
+     left: 100%;
+     top: 0;
+    }
+
+   
+    
+   
+    .card-main{
+        width: 1270px;
+        margin: auto;
+    }
+    
+    .card-item{
+        float:left;
+        width: 300px;
+        margin: 0 30px;
+        border: 0.5px solid rgba(0,0,0,.1);
+        padding: 30px;
+        border-radius:10px;
+    }
+    .card-judul{
+        text-align: left;
+    }
+    .card-deskripsi{
+        text-align: left;
+        
+    }
+
+    .button {
+        background-color:green;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    
+</style>
+</head>
+<body>
+<nav>
+    <ul>
+     	<li><img src="logo.png" height="70"></li>
+     	<li><a href="#">Home</a></li>
+     	<li><a href="#">Features</a>
+     	<li><a href="#">Pages</a>
+     	<li><a href="#">Portfolio</a>
+     	<li><a href="#">Blog</a>
+     	<li><a href="#">Shop</a>
+     	<li><a href="#">Shortcodes</a>
+    </ul>
+</nav>
+
+<div class="container">
+                  
+<div class="col"1></div>
+<div class="col"2></div>
+<div class="col"3></div>
+
+
+
+
+
+<section id="harga" class="harga">
+
+<div class="card-main">
+    <div class="card-item">
+        <img height="100" src="ninja putih.jpg">
+        <h3 class="card-judul">
+        Ninja White 250cc 2013
+        </h3>
+        <p class="card-deskripsi">
+            Rp. 28.000.000
+        </p> 
+        <button class="button">Buat pesanan</button>  
+    </div>
+</div>
+<div class="card-main">
+    <div class="card-item">
+        <img height="100" src="ninja zx hitam.jpeg">
+        <h3 class="card-judul">
+            Ninja ZX Black 250cc 4sc
+        </h3>
+        <p class="card-deskripsi">
+            Rp. 110.530.000
+        </p>  
+        <button class="button">Buat Pesanan</button>   
+    </div>  
+</div>
+<div class="card-main">
+    <div class="card-item">
+        <img height="100" src="cbr 250.jpg">
+        <h3 class="card-judul">
+            CBR 250cc
+        </h3>
+        <p class="card-deskripsi">
+            Rp. 30.800.000
+        </p>   
+        <button class="button">Buat Pesanan</button>  
+    </div>  
+</div>
+</section>
+
+
+</body>
+</html>
